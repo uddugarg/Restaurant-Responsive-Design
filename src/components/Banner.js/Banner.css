@@ -1,0 +1,141 @@
+.banner{
+    height: 50vh;
+    height: calc(var(--vh, 1vh) * 50);
+    overflow: hidden;
+}
+
+.banner__container{
+    width: 1560px;
+    min-width: 1560px;
+    margin: 0 auto !important;
+    height: 100%;
+}
+/* @media screen and (min-width: 1366px){
+    .banner__container{
+        width: 1080px;
+        min-width: 1080px;
+    }
+} */
+@media screen and (max-width: 768px){
+    .banner__container{
+        width: 100%;
+        min-width: 100%;
+    }
+}
+@media screen and (max-width: 425px){
+    .banner__container{
+        width: 100%;
+        min-width: 100%;
+    }
+}
+
+.banner__subContainer {
+    display: flex;
+    height: 100%;
+    padding: 0 72px !important;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 30px;
+}
+@media screen and (max-width: 425px){
+    .banner__subContainer{
+        padding: 0 32px !important;
+        margin-top: 0px !important;
+    }
+}
+
+.banner__subContainer > h2{
+    font-size: 2rem;
+    line-height: 4.2rem;
+    font-weight: 700;
+    z-index: 10;
+    color: white;
+    mix-blend-mode: difference;
+}
+@media screen and (max-width: 768px){
+    .banner__subContainer > h2{
+        font-size: 1.8rem;
+        line-height: 3rem;
+    }
+}
+@media screen and (max-width: 500px){
+    .banner__subContainer > h2{
+        margin-top: 72px;
+        font-size: 1.4rem;
+        line-height: 2rem;
+    }
+}
+
+.banner__line{
+    margin-bottom: -13px;
+    height: 56px;
+    position: relative;
+    overflow: hidden;
+}
+@media screen and (max-width: 738px){
+    .banner__line{
+        height: 48px;
+    }
+}
+@media screen and (max-width: 425px){
+    .banner__line{
+        height: 42px;
+    }
+}
+
+.banner__line > span{
+    position: absolute;
+}
+
+.banner__btn{
+    width: 256px;
+    position: relative;
+    z-index: 2;
+}
+
+.banner__btn > a{
+    display: flex;
+    font-size: 1.2rem;
+    color: black;
+    text-decoration: none;
+    align-items: center;
+    font-weight: 600px;
+}
+@media screen and (max-width: 738px){
+    .banner__btn > a{
+        font-size: 1rem;
+    }
+}
+@media screen and (max-width: 425px){
+    .banner__btn > a{
+        font-size: 0.8rem;
+    }
+}
+
+.svg{
+    margin-left: 16px;
+    border: 2px solid black;
+    padding: 12px;
+    height: 24px;
+    width: 24px;
+    border-radius: 100px;
+    transition: .4s ease-in-out;
+}
+@media screen and (max-width: 738px){
+   .svg{
+        padding: 6px;
+        width: 20px;
+        height: 20px;
+    }
+}
+@media screen and (max-width: 425px){
+   .svg{
+        padding: 6px;
+        width: 16px;
+        height: 16px;
+    }
+}
+.svg:hover{
+    background: black;
+    color: white;
+}
